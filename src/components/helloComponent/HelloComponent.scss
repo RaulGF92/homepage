@@ -1,0 +1,9 @@
+.HelloComponent {
+    color: white;
+    margin: auto;
+    padding: 2rem;
+}
+
+.HelloComponent.last {
+    text-transform: uppercase;
+}
