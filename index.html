@@ -1,22 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
     <title>WebPage - Porfolio</title>
 </head>
+
 <body>
-    <div class="HelloComponent">
-        When you trying hard to create a new Google but...
-    </div>
-    <div id="imageContainer">
-        <iframe src="https://giphy.com/embed/3ohze0w4rqZtqt08PS" width="480" height="470" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/mlb-baseball-3ohze0w4rqZtqt08PS">via GIPHY</a></p>
-    </div>
-    <div class="HelloComponent last">
-        Come the reality!!
-    </div>
+    <main id="MenuComponent">
+        <div class="grid-item grid-1-1"></div>
+        <div class="grid-item grid-1-2">
+            <div class="north"><div class="text-animation">Contactame</div></div>
+        </div>
+        <div class="grid-item grid-1-3"></div>
+        <div class="grid-item grid-2-1">
+            <div class="west"><div class="text-animation">Laboral</div></div>
+        </div>
+        <div class="grid-item grid-2-2 center logo">
+            <div class="img-container">
+                <img src="/assets/logo_transparent.png" />
+            </div>
+        </div>
+        <div class="grid-item grid-2-3">
+            <div class="east"><div class="text-animation">Biografia</div></div>
+        </div>
+        <div class="grid-item grid-3-1"></div>
+        <div class="grid-item grid-3-2">
+            <div class="south"><div class="text-animation">Skills</div></div>
+        </div>
+        <div class="grid-item grid-3-3"></div>
+    </main>
+
+    <div id="ContactComponent"></div>
+    <div id="LaboralComponent"></div>
+    <div id="BiografyComponent"></div>
+    <div id="SkillsComponent"></div>
+    
     <!-- Importaciones de scripts -->
     <script src="./dist/src/bundle.js"></script>
 </body>
+
 </html>

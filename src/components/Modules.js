@@ -1,17 +1,13 @@
-import HelloComponent from './helloComponent/HelloComponent';
+import MenuComponent from './menuComponent/MenuComponent';
+import BiografyComponent from './biografyComponent/BiografyComponent';
+import ContactComponent from './contactComponent/ContactComponent';
+import LaboralComponent from './laboralComponent/LaboralComponent';
+import SkillsComponent from './skilsComponents/SkillsComponents';
 
-/** 
- * En el caso de un componente sin logica, solo habra que importarlo aquí.
- * 
- * PERO ES MAS RECOMENDABLE CREAR UNA CLASE : 3
- * -------------------------------------------------------------------------
- * In the case of a component without logic, you only must put on here.
- * 
- * BUT IS MORE RECOMENDABLE CREATE A CLASS : 3
- * 
-*/
-import './imageContainer/ImageContainer.scss'
-
-export { // without default 
-    HelloComponent
+export {
+    MenuComponent,
+    BiografyComponent,
+    ContactComponent,
+    LaboralComponent,
+    SkillsComponent
 } 

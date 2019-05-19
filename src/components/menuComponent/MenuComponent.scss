@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Sofia');
+
+#MenuComponent {
+    max-width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+
+    background: url('/assets/typeGifDark.gif') no-repeat;
+    background-size:cover;
+    color: #DAA520;
+
+    display: grid;
+    grid-template-rows: 7% 86% 7%;
+    grid-template-columns: 10% 80% 10%;
+    align-items: center;
+
+    .grid-item {
+        text-align: center;
+        font-size: 1rem;
+        text-transform: uppercase;
+        font-family: sans-serif;
+        font-weight: bold;
+        text-shadow: 1px 1px #E8C774;
+    }
+
+    .logo {
+        margin: auto;
+        display:  flex;
+        flex-direction: column;
+        justify-items: center;
+    }
+
+    .west div {
+        text-transform: bold;
+        -ms-transform: rotate(-90deg); /* IE 9 */
+        -webkit-transform: rotate(-90deg); /* Safari 3-8 */
+        transform: rotate(-90deg);
+        margin-top: 4rem;
+    }
+      
+    .east div {
+        text-transform: bold;
+        -ms-transform: rotate(90deg); /* IE 9 */
+        -webkit-transform: rotate(90deg); /* Safari 3-8 */
+        transform: rotate(90deg);
+    }
+
+    .img-container img {
+        width: 50vw;
+        height: auto;
+
+        @media (min-width: 768px) {
+            width: 20vw;
+        }
+    }
+}
