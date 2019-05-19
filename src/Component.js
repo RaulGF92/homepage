@@ -17,22 +17,23 @@ export default class Component {
      * @param {String} querySelector 
      */
     constructor(childContext, querySelector) {
-        this.element = document.querySelector(querySelector);
 
-        if (this.element == null || this.element == undefined) {
-            console.info("El QuerySelector del componente es vacio, por favor reviselo");
+        if (childContext == null || childContext == undefined) {
+            console.info("El ChildContext mostrado por la clase esta vacio, por favor introduzca la clase especifica del componente", querySelector);
+            return;
+        }
+
+        this.elements = document.querySelectorAll(querySelector);
+
+        if (this.elements == null || this.elements == undefined) {
+            console.info("El QuerySelector del componente es vacio, por favor reviselo", querySelector);
+            return;
         }
 
         var eventMap = this.loadChildContext(childContext);
-        console.debug(eventMap, typeof (this.element));
+        console.debug(eventMap);
+        this.elements.forEach(_element => this.linkEvents(_element, eventMap));
 
-        if (typeof (this.element) == "array") {
-            console.debug("El elemento es un array de elementos");
-            this.element.forEach(_element => this.linkEvents(_element, eventMap));
-        } else if (typeof (this.element) == "object") {
-            console.debug("El elemento es un objecto");
-            this.linkEvents(this.element, eventMap);
-        }
     }
 
     /**
@@ -71,8 +72,32 @@ export default class Component {
             .forEach((key) => {
                 var s = new String(key);
                 var eventLegacy = s.toLowerCase();
-                element[eventLegacy] = eventMap[key];
+                element[eventLegacy] = (e) => { eventMap[key](element, e); }
             });
     }
 
-}
+    /**
+     * Envia un evento a otro componente a partir de una key
+     * @param {*} eventName 
+     * @param {*} attr 
+     */
+    publishEvent(eventName, attr) {
+        var event = new CustomEvent(eventName, attr);
+        window.dispatchEvent(event);
+    }
+
+    /**
+     * Permite subscribirse a un evento a partir de una key y un calback. Cada vez que se emita este evento se llamará a este callback
+     * @param {*} eventName 
+     * @param {*} callback 
+     */
+    subscribeEvent(eventName, callback) {
+        window.addEventListener(eventName, (event) => {
+            try {
+                callback(event);
+            } catch (error) {
+                console.debug("Ha ocurrido un error en la ejecución del evento", error);
+            }
+        });
+    }
+} 

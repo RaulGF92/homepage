@@ -6,4 +6,6 @@ export default class MenuComponent extends Component {
     constructor() {
         super(MenuComponent,"#MenuComponent");
     }
+
+
 }
