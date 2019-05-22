@@ -100,4 +100,26 @@ export default class Component {
             }
         });
     }
+
+    /**
+     * Anima el elemento especifico con una animación de CSS cuando acaba lo elimina
+     * @param {*} element 
+     * @param {*} animationName 
+     * @param {*} callback 
+     */
+    animateCSS(animationName, callback) {
+        this.elements.forEach((element) => {
+            element.classList.add('animated', animationName);
+
+            let handle = (e) => {
+                element.classList.remove('animated', animationName)
+                element.removeEventListener('animationend', handle);
+
+                if (typeof callback === 'function') callback()
+            };
+
+            element.addEventListener('animationend', handle);
+        });
+    }
+
 } 

@@ -1,13 +1,21 @@
 @import url('https://fonts.googleapis.com/css?family=Sofia');
 
 #MenuComponent {
+    z-index: 1;
     max-width: 100vw;
     height: 100vh;
     overflow: hidden;
 
-    background: url('/assets/typeGifDark.gif') no-repeat;
+    background: url('/assets/giphy.gif') no-repeat;
     background-size:cover;
-    color: #DAA520;
+    
+    @media (min-width: 768px) {
+        background: url('/assets/giphy.gif') no-repeat bottom;
+        background-size:cover;
+    }
+
+    //color: #F1948A;
+    color: whitesmoke;
 
     display: grid;
     grid-template-rows: 7% 86% 7%;
@@ -20,7 +28,8 @@
         text-transform: uppercase;
         font-family: sans-serif;
         font-weight: bold;
-        text-shadow: 1px 1px #E8C774;
+        text-shadow: 1px 1px #7E8388;
+        letter-spacing: 0.1rem;
     }
 
     .logo {
@@ -30,24 +39,44 @@
         justify-items: center;
     }
 
-    .west div {
-        text-transform: bold;
-        -ms-transform: rotate(-90deg); /* IE 9 */
-        -webkit-transform: rotate(-90deg); /* Safari 3-8 */
-        transform: rotate(-90deg);
-        margin-top: 4rem;
+    .west{ 
+        display: block;
+
+        div {
+            text-transform: bold;
+            -ms-transform: rotate(-90deg); /* IE 9 */
+            -webkit-transform: rotate(-90deg); /* Safari 3-8 */
+            transform: rotate(-90deg);
+            transform-origin: center center;
+            margin-top: 7vh;
+
+            @media (min-width: 768px) {
+                margin-top: 0;
+            }
+        }
     }
       
-    .east div {
-        text-transform: bold;
-        -ms-transform: rotate(90deg); /* IE 9 */
-        -webkit-transform: rotate(90deg); /* Safari 3-8 */
-        transform: rotate(90deg);
+    .east {
+        display: block;
+
+        div {
+            text-transform: bold;
+            -ms-transform: rotate(90deg); /* IE 9 */
+            -webkit-transform: rotate(90deg); /* Safari 3-8 */
+            transform: rotate(90deg);
+            transform-origin: center center;
+            margin-bottom: 7vh;
+
+            @media (min-width: 768px) {
+                margin-bottom: 0;
+            }
+        }
     }
 
     .img-container img {
-        width: 50vw;
+        width: 45vw;
         height: auto;
+        border-radius: 50%;
 
         @media (min-width: 768px) {
             width: 20vw;

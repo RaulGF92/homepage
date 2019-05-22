@@ -1,0 +1,39 @@
+#LaboralComponent {
+
+    height: 100vh;
+    max-height: 100vh;
+    width: 100vw;
+    background: #CD6155;
+    z-index: 2;
+    position: absolute;
+    top: 0;
+
+    display: none;
+    flex-direction: column;
+    align-content: space-around;
+
+    .top-side {
+        display: flex;
+        flex-direction: row-reverse;
+        align-content: flex-end;
+        align-content: space-around;
+        padding: 1rem;
+
+        span {
+            flex: 0.9;
+            text-transform: uppercase;
+            border-bottom: 1px solid goldenrod;
+            font-size: 1.2rem;
+            margin: 1rem;
+            color: white;
+            font-weight: bold;
+            text-align: left;
+        }
+
+        i {
+            flex: 0.1;
+            color: white;
+            text-align: right;
+        }
+    }
+}
