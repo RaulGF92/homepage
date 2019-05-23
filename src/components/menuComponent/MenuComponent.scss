@@ -1,3 +1,5 @@
+@import '../../variables.scss';
+
 @import url('https://fonts.googleapis.com/css?family=Sofia');
 
 #MenuComponent {
@@ -6,11 +8,11 @@
     height: 100vh;
     overflow: hidden;
 
-    background: url('/assets/giphy.gif') no-repeat;
+    background: url($base-path + '/assets/giphy.gif') no-repeat;
     background-size:cover;
     
     @media (min-width: 768px) {
-        background: url('/assets/giphy.gif') no-repeat bottom;
+        background: url($base-path + '/assets/giphy.gif') no-repeat bottom;
         background-size:cover;
     }
 
