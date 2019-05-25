@@ -4,9 +4,7 @@ $laboral-color-secondary : #CACFD2;
 
 #LaboralComponent {
     @extend %window;
-
-    display: none;
-
+    
     main {
         display: flex;
         flex-direction: column;

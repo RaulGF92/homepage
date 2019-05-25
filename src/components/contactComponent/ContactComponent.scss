@@ -1,0 +1,6 @@
+@import '../../variables.scss';
+
+
+#ContactComponent {
+    @extend %window;
+}

@@ -9,15 +9,18 @@ For prod
 $base-path: '/homepage/';
 */
 
-
 $global-height: 100vh;
+$global-height: calc(var(--vh, 1vh) * 100);
 $global-width: 100vw;
+
 
 $background-window-primary: #CD6155;
 
 
 /* Inheritance classes*/
 %window {
+
+    display: none;
     height: $global-height;
     min-height: $global-height;
     width: $global-width;
