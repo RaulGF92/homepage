@@ -25,7 +25,6 @@ export default class ContactComponent extends Component {
      * @param {*} event 
      */
     openView(_this, event) {
-        debugger
         _this.elements[0].style.display = "block";
         _this.animateCSS("bounceInDown");
     }

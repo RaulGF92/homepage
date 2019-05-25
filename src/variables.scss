@@ -34,6 +34,7 @@ $background-window-primary: #CD6155;
         margin: auto;
         background: #CD6155;
         width: 100%;
+        min-height: $global-height;
 
         .header {
             display: flex;
