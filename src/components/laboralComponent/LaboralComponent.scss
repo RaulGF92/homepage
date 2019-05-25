@@ -1,39 +1,23 @@
-#LaboralComponent {
+@import '../../variables.scss';
 
-    height: 100vh;
-    max-height: 100vh;
-    width: 100vw;
-    background: #CD6155;
-    z-index: 2;
-    position: absolute;
-    top: 0;
+$laboral-color-secondary : #CACFD2;
+
+#LaboralComponent {
+    @extend %window;
 
     display: none;
-    flex-direction: column;
-    align-content: space-around;
 
-    .top-side {
+    main {
         display: flex;
-        flex-direction: row-reverse;
-        align-content: flex-end;
+        flex-direction: column;
         align-content: space-around;
-        padding: 1rem;
 
-        span {
-            flex: 0.9;
-            text-transform: uppercase;
-            border-bottom: 1px solid goldenrod;
-            font-size: 1.2rem;
-            margin: 1rem;
-            color: white;
-            font-weight: bold;
-            text-align: left;
-        }
-
-        i {
-            flex: 0.1;
-            color: white;
-            text-align: right;
-        }
+        font-family: 'Montserrat', sans-serif;
     }
+
+    .resume {
+        color: $laboral-color-secondary;
+        font-size: smaller;
+    }
+
 }

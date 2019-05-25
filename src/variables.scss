@@ -1,5 +1,5 @@
 //Change this variable for look your files
-$base-path: '/homepage/';
+$base-path: '';
 
 /*
 For dev
@@ -8,3 +8,96 @@ $base-path: '';
 For prod
 $base-path: '/homepage/';
 */
+
+
+$global-height: 100vh;
+$global-width: 100vw;
+
+$background-window-primary: #CD6155;
+
+
+/* Inheritance classes*/
+%window {
+    height: $global-height;
+    min-height: $global-height;
+    width: $global-width;
+    background: transparent;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    padding-bottom: 2%;
+
+    main {
+        margin: auto;
+        background: #CD6155;
+        width: 100%;
+
+        .header {
+            display: flex;
+            flex-direction: row;
+            padding: 1rem;
+            flex-grow: 1;
+
+            div  {
+                flex: 0.1;
+                margin: auto;
+                display: inline-block;
+                text-align: center;
+
+            }
+    
+            div.separator{
+                flex: 0.8;
+            }
+
+            img  {
+                width: 3rem;
+            }
+
+            i {
+                font-size: 1.5rem;
+                text-align: center;
+                color: whitesmoke;
+            }
+        }
+
+        .body {
+            display: flex;
+            margin: auto;
+            margin-top: 0;
+            margin-bottom: 0;
+            width: 80vw;
+            flex-direction: column;
+            align-items: stretch;
+            padding-bottom: 5%;
+
+            .title {
+                position: relative;
+                font-size: large;
+                color: white;
+                font-weight: bold;
+                text-align: center;
+                font-family: 'Varela Round', sans-serif;
+                text-transform: uppercase;
+
+                span {
+                    z-index: 3;
+                    background-color: $background-window-primary;
+                    position: relative;
+                    padding-left: 1%;
+                    padding-right: 1%;
+                }
+            }
+            .title::before {
+                content: "";
+                z-index: 2;
+                width: 100%;
+                display: block;
+                position: absolute;
+                border-bottom: 2px solid goldenrod;
+                top: 50%;
+            }
+        }
+    }
+
+  }
