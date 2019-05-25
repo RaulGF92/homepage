@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+$timeline-color-secondary : #E5E7E9;
+
+#timeline {
+    height: 100%;
+    display: column;
+    flex-direction: column;
+    align-items: stretch;
+    flex-grow: 1;
+
+    font-family: 'Montserrat', sans-serif;
+
+    .timeline-separator {
+        min-height: 65px;
+        max-height: 65px;
+        border-left: 2px dashed white;
+    }
+
+    .timeline-separator.present {
+        position: relative;
+
+        span {
+            color: #202020;
+            position: absolute;
+            opacity: 0.6;
+            top: 35%;
+            text-align: center;
+            left: 5%;
+            text-transform: uppercase;
+        }
+    }
+
+    .timeline-item {
+        min-height: 150px;
+        max-height: 150px;
+
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+
+        .timeline-interval {
+            border-left: 2px solid white;
+            flex: 0.05;
+            position: relative;
+
+            .timeline-interval-circle {
+                flex: 1;
+                position: relative;
+            }
+
+            .timeline-interval-after {
+                display: flex;
+                flex-direction: row;
+                position: absolute;
+                align-content: center;
+                bottom: 0;
+                max-width: 50px;
+                min-width: 50px;
+                flex-grow: 0;
+            }
+    
+            .timeline-interval-before {
+                display: flex;
+                flex-direction: row;
+                align-content: center;
+                position: absolute;
+                top: 0;
+                max-width: 50px;
+                min-width: 50px;
+                flex-grow: 0;
+            }
+
+            .circle {
+                border-radius: 100%;
+                width: 7.5px;
+                height: 6px;
+                border: 3px solid white;
+                margin-left: -8px;
+                background-color: cornflowerblue;
+                position: absolute;
+            }
+        }
+
+        .timeline-body {
+            flex: 0.95;
+            display: flex;
+            flex-direction: row;
+
+            .date-place {
+                flex : 0.15;
+                display: flex;
+                flex-direction: column;
+                align-content: stretch;
+                justify-items: center;
+
+                div {
+                    flex: 1;
+                    position: relative;
+                    text-align: center;
+                    margin: auto;
+
+                    label {
+                        position: absolute;
+                        top: 20%;
+                        left: -6vw;
+                        font-size: small;
+                        text-transform: uppercase;
+                        max-width: 35px;
+                        min-width: 35px;
+                        text-align: center;
+                        font-weight: bold;
+                        font-family: 'Varela Round', sans-serif;
+                    }
+                }
+
+                div.before label {
+                    bottom: 20%;
+                    top: unset;
+                }
+            }
+
+            .sumary-place {
+                padding: 5%;
+                display: flex;
+                flex-direction: column;
+                flex: 0.85;
+
+                label {
+                    text-transform: uppercase;
+                    font-weight: bold;
+                }
+
+                sub {
+                    font-weight: bold;
+                    color: $timeline-color-secondary;
+                }
+
+                p {
+                    text-overflow: ellipsis;
+                    white-space: pre-line;
+                    overflow: hidden;
+                    text-align: justify;
+                }
+            }
+        }
+    }
+
+    .timeline-item.working-today {
+        .timeline-interval {
+            border-left-style: dashed;
+        }
+
+        .timeline-interval-before .circle {
+            display: none;
+        }
+
+        .timeline-body .date-place .after {
+            display: none;
+        }
+    }
+}

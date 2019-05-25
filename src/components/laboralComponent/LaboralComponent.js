@@ -25,7 +25,7 @@ export default class LaboralComponent extends Component {
      * @param {*} event 
      */
     openView(_this, event) {
-        _this.elements[0].style.display = "flex";
+        _this.elements[0].style.display = "block";
         _this.animateCSS("bounceInLeft");
     }
 
