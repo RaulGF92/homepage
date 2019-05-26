@@ -1,6 +1,3 @@
-//Change this variable for look your files
-$base-path: '/homepage/';
-
 /*
 For dev
 $base-path: '';
@@ -8,6 +5,9 @@ $base-path: '';
 For prod
 $base-path: '/homepage/';
 */
+//Change this variable for look your files
+$base-path: '/homepage/';
+
 
 $global-height: 100vh;
 $global-height: calc(var(--vh, 1vh) * 100);
