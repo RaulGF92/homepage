@@ -41,6 +41,7 @@ $background-window-primary: #CD6155;
             flex-direction: row;
             padding: 1rem;
             flex-grow: 1;
+            max-height: 10vh;
 
             div  {
                 flex: 0.1;
@@ -58,7 +59,7 @@ $background-window-primary: #CD6155;
                 width: 3rem;
             }
 
-            i {
+            span {
                 font-size: 1.5rem;
                 text-align: center;
                 color: whitesmoke;
@@ -66,6 +67,7 @@ $background-window-primary: #CD6155;
         }
 
         .body {
+
             display: flex;
             margin: auto;
             margin-top: 0;
@@ -73,6 +75,7 @@ $background-window-primary: #CD6155;
             width: 80vw;
             flex-direction: column;
             align-items: stretch;
+            align-content: space-between;
             padding-bottom: 5%;
 
             .title {
@@ -100,6 +103,12 @@ $background-window-primary: #CD6155;
                 position: absolute;
                 border-bottom: 2px solid goldenrod;
                 top: 50%;
+            }
+        }
+
+        @media (min-width: 1025px) {
+            .body {
+                max-width: 50vw !important;
             }
         }
     }

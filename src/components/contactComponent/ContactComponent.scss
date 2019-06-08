@@ -1,6 +1,180 @@
 @import '../../variables.scss';
+@import url('https://fonts.googleapis.com/css?family=Arvo&display=swap');
 
+$contact-color-secondary : #CACFD2;
 
 #ContactComponent {
     @extend %window;
+
+    .resume {
+        color: $contact-color-secondary;
+        font-size: smaller;
+    }
+
+    .bio-info {
+        min-height: 25vh;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-content: space-around;
+        justify-content: space-between;
+        justify-items: center;
+        font-family: 'Arvo', serif;
+        flex-wrap: wrap;
+        
+        .bio-info-container {
+            position: absolute;
+            display: flex;
+            flex-direction: row;
+            font-size: 1rem;
+            position: relative;
+            text-align: center;
+            flex: 1;
+            min-height: 10vh;
+            max-height: 10vh;
+            margin: 5% 0;
+            //background-color: #424949;
+            color: goldenrod;
+            border: 2px dashed whitesmoke;
+            @media(min-width: 700px) {
+                margin: 5% 1%;
+            }
+            .principal {
+                font-size: 1.5rem;
+                margin: auto;
+                flex: 1;
+                color: #CACFD2;
+            }
+
+            div {
+                flex: 2;
+                display: flex;
+                flex-direction: row;
+                align-content: stretch;
+                text-align: right;
+
+                span {
+                    flex: 1;
+                    margin: auto;
+                }
+            }
+
+            sub {
+                text-align: center;
+                font-size: xx-small !important;
+                text-transform: uppercase;
+                color: white;
+                position: absolute;
+                top: 0;
+                margin: auto;
+                width: 100%;
+                font-style: oblique;
+                opacity: 0.5;
+            }
+  
+            .separator {
+                flex: 0.5;
+            }
+
+            .tijeras {
+                position: absolute;
+                bottom: -0.5rem;
+                font-size: 1rem;
+                color: #424949;
+                opacity: 0.5;
+                left: 10%;
+            }
+        }
+
+        .separator {
+            min-height: 2.5vh;
+        }
+
+        .mobile{ 
+            text-align: center !important;
+
+            sub {
+                bottom: 0;
+                top: unset;
+            } 
+
+            .numero {
+                flex: 2 !important;
+            }
+
+            .tijeras {
+                left: 0;
+                bottom: 0;
+                top: -0.5rem;
+                left: 90%;
+            }
+        }
+    }
+
+    .social-medias {
+        width: 100%;
+        min-height: 30vh;
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: repeat(2, 50%);
+        grid-gap: 1vw;
+        font-family: 'Arvo', serif;
+
+        .social-media-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-weight: bold;
+            color: whitesmoke;
+            
+            .separator {
+                flex: 0.225;
+            }
+
+            i {
+                font-size: 2.5rem;
+                flex: 0.55;
+            }
+
+            span {
+                flex: 0.225;
+            }
+        }
+    }
+
+    .separator-main {
+        height: 5vh;
+    }
+}
+
+.social-media-item.instagram {
+    background: url($base-path + '/assets/instagram-background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    color: #E86491!important;
+}
+
+.social-media-item.medium {
+    background: url($base-path + '/assets/medium-background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color : #00ab6c !important;
+}
+
+.social-media-item.github {
+    background: url($base-path + '/assets/github-background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    color: #6c4c9c !important;
+}
+
+.social-media-item.linkedin {
+    background: url($base-path + '/assets/linkedin-background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+     
+    color: #007bb5 !important;
+    
 }

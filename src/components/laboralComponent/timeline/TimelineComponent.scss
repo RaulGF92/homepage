@@ -121,7 +121,7 @@ $timeline-color-secondary : #E5E7E9;
             }
 
             .sumary-place {
-                padding: 5%;
+                padding: 1%;
                 display: flex;
                 flex-direction: column;
                 flex: 0.85;
@@ -141,6 +141,9 @@ $timeline-color-secondary : #E5E7E9;
                     white-space: pre-line;
                     overflow: hidden;
                     text-align: justify;
+                    text-justify: distribute;
+                    text-align-last: left;
+                    word-break: break-all;
                 }
             }
         }

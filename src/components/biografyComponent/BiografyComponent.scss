@@ -1,5 +1,166 @@
 @import '../../variables.scss';
 
+$biografy-color-secondary : #CACFD2;
+
 #BiografyComponent {
     @extend %window;
+
+    .header-body {
+        display: flex;
+        flex-direction: column;
+
+        @media (min-width: 1025px) {
+            flex-direction: row;
+        }
+
+        .part-1 {
+            flex: 1;
+            padding: 5%;
+            img {
+                height: auto;
+                width: 100%;
+            }
+        }
+
+        .part-2 {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-items: center;
+            align-content: center;
+            justify-content: flex-end;
+
+            .title-fullname {
+                width: 100%;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+
+                span {
+                    flex: 0.4;
+                }
+
+                div {
+                    flex: 0.2;
+                    width: 100%;
+                    min-height: 2vh;
+                    position: relative;
+                }
+
+                div::before {
+                    content: '';
+                    width: 100%;
+                    height: 2px;
+                    border-bottom: double 2px  goldenrod;
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+                }
+            }
+
+            span {
+                font-weight: bold;
+                text-align: center;
+                font-family: 'Varela Round', sans-serif;
+                text-transform: uppercase;
+                font-size: small;
+            }
+
+            span.fullname {
+                color: whitesmoke;
+                text-align: left;
+                font-size: larger;
+            }
+            span.profession {
+                color: #F7DC6F;
+                text-align: right;
+            }
+        }
+
+        .cv-buttons {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            justify-content: space-between;
+            align-content: space-between;
+            align-items: center;
+            justify-items: center;
+
+            .button {
+                flex: 1;
+
+                button {
+                    margin: auto;
+                    width: 90%;
+                    display:inline-block;
+                    padding:0.35em 1.2em;
+                    border:0.1em solid #FFFFFF;
+                    margin:0 0.3em 0.3em 0;
+                    border-radius:0.12em;
+                    box-sizing: border-box;
+                    text-decoration:none;
+                    font-family:'Roboto',sans-serif;
+                    font-weight:300;
+                    color:#FFFFFF;
+                    text-align:center;
+                    background-color: transparent;
+                    box-shadow: 1px 1px 8px 0px darkgrey;
+                    font-weight: bolder;
+                }
+
+                button:active {
+                    color:#000000;
+                    background-color:#FFFFFF;
+                    border-color: white;
+                }
+            }
+
+            .button.preview button {
+                color: #E5E7E9;
+                border-color: #7DCEA0;
+                background: #7DCEA0;
+            }
+
+            .button.download button {
+                color: #E5E7E9;
+                border-color: #85C1E9;
+                background: #85C1E9;
+            }
+            
+        }
+    }
+
+    .about-me-grid {
+        display: grid;
+        grid-template-columns: 45% 55%;
+        grid-auto-rows: minmax(5vh, auto);
+        grid-gap: 10px;
+        font-family: 'Montserrat', sans-serif;
+
+        .title-me{
+            color: darkgrey;
+        }
+
+        .resume-me {
+            text-align: justify;
+            color: #202020;
+        }
+    }
+
+    .iframe {
+        width: 100%;
+        min-height: 20vh;
+        height: auto;
+        flex: 1;
+
+        iframe {
+            height: 500px;
+            width: 100%;
+        }
+    }
+
+    .separator-main {
+        min-height: 5vh;
+    }
 }
