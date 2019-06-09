@@ -16,9 +16,15 @@ $biografy-color-secondary : #CACFD2;
         .part-1 {
             flex: 1;
             padding: 5%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+
             img {
                 height: auto;
-                width: 100%;
+                width: auto;
+                max-height: 50vh;
+                margin: auto;
             }
         }
 
@@ -162,5 +168,22 @@ $biografy-color-secondary : #CACFD2;
 
     .separator-main {
         min-height: 5vh;
+    }
+
+    .studies {
+        color: whitesmoke;
+        font-family: 'Montserrat', sans-serif;
+        z-index: 3;
+        position: relative;
+
+        .year {
+            z-index: -1;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            font-size: 5rem;
+            color: #202020;
+            opacity: 0.5;
+        }
     }
 }

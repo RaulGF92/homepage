@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="1024px" height="768px" viewBox="0 0 1024 768">
+<defs>
+<style type="text/css"> @import url(https://fonts.googleapis.com/css?family=Bowlby+One+SC:400:latin-ext); </style>
+</defs>
+<clipPath id="cp6">
+<path d="M 0,0 L 1024,0 L1024,768 L 0,768 z M 0,0 L 1075,0 L 1075,800 L 0,800 z" fill-rule="evenodd">
+</path>
+</clipPath>
+<g clip-path="url(#cp6)">
+</g>
+<rect x="0" y="0" width="1075" height="800" opacity="1" fill="rgb(205, 97, 85)" stroke="none">
+</rect>
+<text x="-210.93011474609375" y="8.309051519999997" style="font: normal 83.09051520000001px 'Bowlby One SC'" text-anchor="start" dy="32.84210086956522" opacity="1" fill="rgb(87, 173, 245)" stroke="none" transform="translate(516, 372)">Webpack</text>
+<text x="-163.21826171875" y="8.309051519999997" style="font: normal 83.09051520000001px 'Bowlby One SC'" text-anchor="start" dy="32.84210086956522" opacity="1" fill="rgb(247, 255, 74)" stroke="none" transform="translate(552, 588) rotate(-90)">Spring</text>
+<text x="-145.81320190429688" y="8.309051519999997" style="font: normal 83.09051520000001px 'Bowlby One SC'" text-anchor="start" dy="32.84210086956522" opacity="1" fill="rgb(87, 173, 245)" stroke="none" transform="translate(480, 300)">Java8</text>
+<text x="-146.05662536621094" y="8.309051519999997" style="font: normal 83.09051520000001px 'Bowlby One SC'" text-anchor="start" dy="32.84210086956522" opacity="1" fill="rgb(242, 142, 44)" stroke="none" transform="translate(456, 228)">Java7</text>
+<text x="-130.12686157226562" y="6.231788639999998" style="font: normal 62.317886400000006px 'Bowlby One SC'" text-anchor="start" dy="24.631575652173918" opacity="1" fill="rgb(87, 173, 245)" stroke="none" transform="translate(468, 540) rotate(-90)">Sencha</text>
+<text x="-102.71412658691406" y="6.231788639999998" style="font: normal 62.317886400000006px 'Bowlby One SC'" text-anchor="start" dy="24.631575652173918" opacity="1" fill="rgb(87, 173, 245)" stroke="none" transform="translate(636, 528) rotate(-90)">Babel</text>
+<text x="-97.69403839111328" y="6.231788639999998" style="font: normal 62.317886400000006px 'Bowlby One SC'" text-anchor="start" dy="24.631575652173918" opacity="1" fill="rgb(247, 255, 74)" stroke="none" transform="translate(396, 528) rotate(-90)">Linux</text>
+<text x="-118.35247039794922" y="6.231788639999998" style="font: normal 62.317886400000006px 'Bowlby One SC'" text-anchor="start" dy="24.631575652173918" opacity="1" fill="rgb(87, 173, 245)" stroke="none" transform="translate(408, 168)">Maven</text>
+<text x="-82.81631469726562" y="6.231788639999998" style="font: normal 62.317886400000006px 'Bowlby One SC'" text-anchor="start" dy="24.631575652173918" opacity="1" fill="rgb(242, 142, 44)" stroke="none" transform="translate(684, 240)">NPM</text>
+<text x="-191.65594482421875" y="4.1545257599999985" style="font: normal 41.54525760000001px 'Bowlby One SC'" text-anchor="start" dy="16.42105043478261" opacity="1" fill="rgb(242, 142, 44)" stroke="none" transform="translate(552, 120)">PatronesDiseño</text>
+<text x="-156.42404174804688" y="4.1545257599999985" style="font: normal 41.54525760000001px 'Bowlby One SC'" text-anchor="start" dy="16.42105043478261" opacity="1" fill="rgb(242, 142, 44)" stroke="none" transform="translate(684, 168)">GoogleCloud</text>
+<text x="-115.28970336914062" y="4.1545257599999985" style="font: normal 41.54525760000001px 'Bowlby One SC'" text-anchor="start" dy="16.42105043478261" opacity="1" fill="rgb(101,230,45)" fill-opacity="1" stroke="none" transform="translate(324, 552) rotate(-90)">MongoDB</text>
+<text x="-86.69039154052734" y="4.1545257599999985" style="font: normal 41.54525760000001px 'Bowlby One SC'" text-anchor="start" dy="16.42105043478261" opacity="1" fill="rgb(242, 142, 44)" stroke="none" transform="translate(756, 288)">Meteor</text>
+<text x="-71.05204772949219" y="4.1545257599999985" style="font: normal 41.54525760000001px 'Bowlby One SC'" text-anchor="start" dy="16.42105043478261" opacity="1" fill="rgb(247, 255, 74)" stroke="none" transform="translate(744, 432)">Neo4j</text>
+<text x="-44.52162170410156" y="4.1545257599999985" style="font: normal 41.54525760000001px 'Bowlby One SC'" text-anchor="start" dy="16.42105043478261" opacity="1" fill="rgb(242, 142, 44)" stroke="none" transform="translate(720, 480)">SQL</text>
+<text x="-45.880592346191406" y="4.1545257599999985" style="font: normal 41.54525760000001px 'Bowlby One SC'" text-anchor="start" dy="16.42105043478261" opacity="1" fill="rgb(87, 173, 245)" stroke="none" transform="translate(264, 408)">CSS</text>
+<text x="-79.66224670410156" y="2.0772628799999993" style="font: normal 20.772628800000003px 'Bowlby One SC'" text-anchor="start" dy="8.210525217391305" opacity="1" fill="rgb(87, 173, 245)" stroke="none" transform="translate(276, 276)">CodigoLimpio</text>
+<text x="-53.50706481933594" y="2.0772628799999993" style="font: normal 20.772628800000003px 'Bowlby One SC'" text-anchor="start" dy="8.210525217391305" opacity="1" fill="rgb(87, 173, 245)" stroke="none" transform="translate(696, 564) rotate(-90)">Windows</text>
+<text x="-41.631256103515625" y="2.0772628799999993" style="font: normal 20.772628800000003px 'Bowlby One SC'" text-anchor="start" dy="8.210525217391305" opacity="1" fill="rgb(101,230,45)" fill-opacity="1" stroke="none" transform="translate(696, 324)">Oracle</text>
+<text x="-32.73707580566406" y="2.0772628799999993" style="font: normal 20.772628800000003px 'Bowlby One SC'" text-anchor="start" dy="8.210525217391305" opacity="1" fill="rgb(87, 173, 245)" stroke="none" transform="translate(276, 324)">JUnit</text>
+<text x="-34.89723205566406" y="2.0772628799999993" style="font: normal 20.772628800000003px 'Bowlby One SC'" text-anchor="start" dy="8.210525217391305" opacity="1" fill="rgb(242, 142, 44)" stroke="none" transform="translate(264, 492) rotate(-90)">SOLID</text>
+<text x="-40.039024353027344" y="2.0772628799999993" style="font: normal 20.772628800000003px 'Bowlby One SC'" text-anchor="start" dy="8.210525217391305" opacity="1" fill="rgb(101,230,45)" fill-opacity="1" stroke="none" transform="translate(768, 360) rotate(-90)">HTML5</text>
+<text x="-25.506118774414062" y="2.0772628799999993" style="font: normal 20.772628800000003px 'Bowlby One SC'" text-anchor="start" dy="8.210525217391305" opacity="1" fill="rgb(247, 255, 74)" stroke="none" transform="translate(732, 552) rotate(-90)">Jest</text>
+<text x="-30.88115692138672" y="2.0772628799999993" style="font: normal 20.772628800000003px 'Bowlby One SC'" text-anchor="start" dy="8.210525217391305" opacity="1" fill="rgb(242, 142, 44)" stroke="none" transform="translate(276, 300)">SASS</text>
+<text x="-23.39665985107422" y="2.0772628799999993" style="font: normal 20.772628800000003px 'Bowlby One SC'" text-anchor="start" dy="8.210525217391305" opacity="1" fill="rgb(242, 142, 44)" stroke="none" transform="translate(336, 420)">TDD</text>
+</svg>

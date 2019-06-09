@@ -1,5 +1,83 @@
 @import '../../variables.scss';
+@import './PieComponent.scss';
 
 #SkillsComponent {
     @extend %window;
+
+    .skill-main {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-items: center;
+
+        .container {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-items: center;
+
+            .charts-container {
+                width: 60%;
+                margin: auto;
+            }
+
+            * {
+                box-sizing: border-box;
+            }
+        }
+
+        .label {
+            font-size: 0.4em;
+            line-height: 1.8em;
+        }
+
+
+        @mixin pie-color($main-color)  {
+            .label {
+                color: $main-color  !important;
+            }
+
+            .half-circle {
+                border-color: $main-color;
+            } 
+        }
+
+        .css3 {
+            @include pie-color(#e01563);
+        }
+
+        .angular {
+            @include pie-color(#b52e31);
+        }
+
+        .react {
+            @include pie-color(#00d8ff);
+        }
+
+        .java {
+            @include pie-color(#F39C12);
+        }
+
+        .js {
+            @include pie-color(#f7df1e);
+        }
+
+        .ts {
+            @include pie-color(#007acc);
+        }
+    }
+
+    #cloud {
+        display: flex;
+        flex-direction: column;
+        
+        img {
+            width: 100%;
+        }
+    }
+
+    .separator-main {
+        min-height: 5vh;
+    }
 }

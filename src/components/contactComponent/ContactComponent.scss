@@ -117,8 +117,13 @@ $contact-color-secondary : #CACFD2;
         display: grid;
         grid-template-columns: repeat(2, 50%);
         grid-template-rows: repeat(2, 50%);
-        grid-gap: 1vw;
+        grid-gap: 3vw;
         font-family: 'Arvo', serif;
+        @media(min-width: 700px) {
+            grid-gap: 1.5vw;
+        }
+
+        
 
         .social-media-item {
             display: flex;
