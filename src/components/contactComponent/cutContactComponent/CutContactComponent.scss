@@ -1,0 +1,53 @@
+.cut-contact-component.click {
+    .tijeras.left {
+        animation: move-right;
+        animation-duration: 1s;
+    }
+
+    .tijeras.right {
+        animation: move-left;
+        animation-duration: 1s;
+    }
+}
+@keyframes move-right {
+    from {
+        left: 5%
+    }
+
+    to {
+        left: 90%;
+    }
+}
+
+@keyframes move-left {
+    from {
+        left: 90%
+    }
+
+    to {
+        left: 5%;
+    }
+}
+
+.blink {
+    animation: blink-animation 1s steps(5, start) infinite;
+    -webkit-animation: blink-animation 1s steps(5, start) infinite;
+  }
+  @keyframes blink-animation {
+    to {
+      border-color: goldenrod;
+    }
+
+    from {
+        border-color: whitesmoke
+    }
+  }
+  @-webkit-keyframes blink-animation {
+    to {
+        border-color: goldenrod;
+      }
+  
+      from {
+          border-color: whitesmoke
+      }
+  }

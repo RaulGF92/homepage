@@ -181,9 +181,13 @@ $biografy-color-secondary : #CACFD2;
             position: absolute;
             bottom: 0;
             right: 0;
-            font-size: 5rem;
+            font-size: 15vw;
             color: #202020;
             opacity: 0.5;
+
+            @media (min-width: 800px) {
+                font-size: 5rem;
+            }
         }
     }
 }

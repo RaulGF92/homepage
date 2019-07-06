@@ -5,6 +5,8 @@ import LaboralComponent from './laboralComponent/LaboralComponent';
 import SkillsComponent from './skilsComponents/SkillsComponents';
 import MenuItemComponent from './menuComponent/MenuItemComponent';
 import TimelineComponent from './laboralComponent/timeline/TimelineComponent';
+import CutContactComponent from './contactComponent/cutContactComponent/CutContactComponent';
+import PreviewCvComponent from './biografyComponent/previewCv/PreviewCvComponent';
 
 export {
     MenuComponent,
@@ -13,5 +15,7 @@ export {
     LaboralComponent,
     SkillsComponent,
     MenuItemComponent,
-    TimelineComponent
+    TimelineComponent,
+    CutContactComponent,
+    PreviewCvComponent
 } 

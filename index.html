@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="theme-color" content="#202020">
     <link rel="shortcut icon" type="image/png" href="/assets/logoTransparente2.png" />
@@ -13,7 +13,7 @@
 
     <title>Raulgf - homepage</title>
 
-    <base href="/homepage/" />
+    <base href="/" />
 
 </head>
 
@@ -78,8 +78,8 @@
                         </div>
                         <br />
                         <div class="cv-buttons">
-                            <div class="button preview"><button>Preview CV</button></div>
-                            <div class="button download"><button>Download CV</button></div>
+                            <div class="button preview"><button id="previewCV">Preview CV</button></div>
+                            <div class="button download"><button id="downloadCV">Download CV</button></div>
                         </div>
                     </div>
                 </div>
@@ -253,18 +253,20 @@
                     <p class="resume">Aquí podras encontrar todos los medios posibles para poder contactar conmigo.</p>
                 </div>
                 <div class="bio-info">
-                    <div class="email bio-info-container">
-                        <i class="fas fa-cut tijeras"></i>
+                    <div class="email bio-info-container cut-contact-component">
+                        <i class="fas fa-cut tijeras top right fa-flip-horizontal"></i>
+                        <i class="fas fa-cut tijeras left bottom"></i>
                         <i class="far fa-envelope principal"></i>
-                        <div><span>raulgf92@gmail.com</span></div></i>
+                        <div><span class="text-copy">raulgf92@gmail.com</span></div></i>
                         <div class="separator"></div>
                         <sub>Click Me To Copy</sub>
                     </div>
                     <div class="separator"></div>
-                    <div class="mobile bio-info-container">
-                        <i class="fas fa-cut tijeras fa-flip-horizontal"></i>
+                    <div class="mobile bio-info-container cut-contact-component">
+                        <i class="fas fa-cut tijeras right bottom fa-flip-horizontal"></i>
+                        <i class="fas fa-cut tijeras left top"></i>
                         <i class="fas fa-phone principal"></i>
-                        <div><span>+34</span><span class="numero">687037489</span></div></i>
+                        <div><span>+34</span><span class="numero text-copy">687037489</span></div></i>
                         <div class="separator"></div>
                         <sub>Click Me To Copy</sub>
                     </div>
@@ -426,6 +428,30 @@
         </main>
     </div>
     <!-- FIN LaboralComponent -->
+    <!-- Preview CV Component -->
+    <div id="previewCVComponent">
+        <main>
+            <div class="header">
+                <div class="logo-item">
+                    <img src="assets/logoTransparente2.png" />
+                </div>
+                <div class="separator"></div>
+                <div class="logo-item">
+                    <i class="close-window far fa-window-close"></i>
+                </div>
+            </div>
+            <object class="object-iframe" data="https://docs.google.com/gview?embedded=true&url=https://raulgf92.github.io/homepage/assets/Raúl's Resume.pdf">
+                <div class="separator"></div>
+                <div class="body">
+                    <p>Tu dispositivo no es compatible con la vista embedida del pdf</p>
+                    <p>Clicka aquí para mostrarlo en una nueva pestaña</p>
+                    <button id="mostar-vs-new-window">Mostrar</button>
+                </div>
+                <div class="separator"></div>
+            </object>
+        </main>
+    </div>
+    <!-- FIN Preview CV Component -->
 
     <!-- Importaciones de scripts -->
     <script src="dist/src/bundle.js"></script>

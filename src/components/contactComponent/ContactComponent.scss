@@ -78,11 +78,25 @@ $contact-color-secondary : #CACFD2;
 
             .tijeras {
                 position: absolute;
-                bottom: -0.5rem;
                 font-size: 1rem;
                 color: #424949;
                 opacity: 0.5;
-                left: 10%;
+            }
+
+            .tijeras.top {
+                top: -0.5rem;
+            }
+
+            .tijeras.bottom {
+                bottom: -0.5rem;
+            }
+
+            .tijeras.right {
+                left: 90%;
+            }
+
+            .tijeras.left {
+                left:5%;
             }
         }
 
@@ -100,13 +114,6 @@ $contact-color-secondary : #CACFD2;
 
             .numero {
                 flex: 2 !important;
-            }
-
-            .tijeras {
-                left: 0;
-                bottom: 0;
-                top: -0.5rem;
-                left: 90%;
             }
         }
     }
