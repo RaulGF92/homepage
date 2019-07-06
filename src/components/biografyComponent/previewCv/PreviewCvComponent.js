@@ -24,12 +24,11 @@ export default class PreviewCvComponent extends Component {
         element.style.display = "block";
 
         _this.animateCSS("zoomIn", () => { });
-        //debugger
     }
 
     /**
- * Esta función va ser activada desde un evento onclick
- */
+     * Esta función va ser activada desde un evento onclick
+     */
     closeView(_this, event) {
         _this.animateCSS("zoomOut", () => {
             _this.elements[0].style.display = "none";

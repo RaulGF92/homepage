@@ -65,6 +65,10 @@ export default class BiografyComponent extends Component {
      * @param {*} event 
      */
     downloadCV(_this, event) {
-        debugger
+        const uri = "https://raulgf92.github.io/homepage/assets/Raúl's Resume.pdf";
+        var link = document.createElement("a");
+        link.download = name;
+        link.href = uri;
+        link.click();
     }
 }
