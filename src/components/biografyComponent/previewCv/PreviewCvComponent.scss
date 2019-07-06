@@ -4,6 +4,7 @@
     @extend %window;
     
     display: none;
+    position: sticky;
 
     main {
         position: relative;
@@ -46,7 +47,6 @@
         .header {
             z-index: 4;
             position: absolute;
-            top: 5vh;
             width: 100%;
             margin: auto;
             padding: 0;
