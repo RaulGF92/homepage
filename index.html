@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="theme-color" content="#202020">
     <link rel="shortcut icon" type="image/png" href="/assets/logoTransparente2.png" />
@@ -13,7 +13,7 @@
 
     <title>Raulgf - homepage</title>
 
-    <base href="/homepage/" />
+    <base href="/" />
 
 </head>
 
@@ -78,7 +78,6 @@
                         </div>
                         <br />
                         <div class="cv-buttons">
-                            <div class="button preview"><button id="previewCV">Preview CV</button></div>
                             <div class="button download"><button id="downloadCV">Download CV</button></div>
                         </div>
                     </div>
@@ -118,6 +117,25 @@
                 </div>
             </div>
         </main>
+        <!-- Preview CV Component -->
+        <div id="previewCVComponent">
+            <div class="visual-column">
+                <button><i class="fas fa-id-badge"></i></button>
+            </div>
+            <div class="main">
+                <object class="object-iframe"
+                    data="https://docs.google.com/gview?embedded=true&url=https://raulgf92.github.io/homepage/assets/Raúl's Resume.pdf">
+                    <div class="separator"></div>
+                    <div class="body">
+                        <p>Tu dispositivo no es compatible con la vista embedida del pdf</p>
+                        <p>Clicka aquí para mostrarlo en una nueva pestaña</p>
+                        <button id="mostar-vs-new-window">Mostrar</button>
+                    </div>
+                    <div class="separator"></div>
+                </object>
+            </div>
+        </div>
+        <!-- FIN Preview CV Component -->
     </div>
     <!-- FIN BiografyComponent -->
 
@@ -428,33 +446,11 @@
         </main>
     </div>
     <!-- FIN LaboralComponent -->
-    <!-- Preview CV Component -->
-    <div id="previewCVComponent">
-        <main>
-            <div class="header">
-                <div class="logo-item">
-                    <img src="assets/logoTransparente2.png" />
-                </div>
-                <div class="separator"></div>
-                <div class="logo-item">
-                    <i class="close-window far fa-window-close"></i>
-                </div>
-            </div>
-            <object class="object-iframe" data="https://docs.google.com/gview?embedded=true&url=https://raulgf92.github.io/homepage/assets/Raúl's Resume.pdf">
-                <div class="separator"></div>
-                <div class="body">
-                    <p>Tu dispositivo no es compatible con la vista embedida del pdf</p>
-                    <p>Clicka aquí para mostrarlo en una nueva pestaña</p>
-                    <button id="mostar-vs-new-window">Mostrar</button>
-                </div>
-                <div class="separator"></div>
-            </object>
-        </main>
-    </div>
-    <!-- FIN Preview CV Component -->
 
     <!-- Importaciones de scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.js"></script>
     <script src="dist/src/bundle.js"></script>
+
 </body>
 
 </html>
