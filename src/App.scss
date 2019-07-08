@@ -10,6 +10,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    overflow-x: hidden;
 
 
     background: url($base-path + '/assets/bodyTexture.png');
