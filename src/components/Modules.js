@@ -7,6 +7,8 @@ import MenuItemComponent from './menuComponent/MenuItemComponent';
 import TimelineComponent from './laboralComponent/timeline/TimelineComponent';
 import CutContactComponent from './contactComponent/cutContactComponent/CutContactComponent';
 import PreviewCvComponent from './biografyComponent/previewCv/PreviewCvComponent';
+import SocialMediaComponent from './contactComponent/socialMediaComponent/SocialMediaComponent';
+import TimelineItemComponent from './laboralComponent/timeline/timelineItem/TimelineItemComponent';
 
 export {
     MenuComponent,
@@ -17,5 +19,7 @@ export {
     MenuItemComponent,
     TimelineComponent,
     CutContactComponent,
-    PreviewCvComponent
+    PreviewCvComponent,
+    SocialMediaComponent,
+    TimelineItemComponent
 } 

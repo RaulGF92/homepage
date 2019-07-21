@@ -22,16 +22,17 @@
             $color-button : #3498DB;
             background-color: lightgrey;
             border-radius: 35%;
-            width: 2rem;
-            height: 2rem;
+            width: 3rem;
+            height: 3rem;
             top: 50%;
-            margin-left: -1rem;
+            margin-left: -1.5rem;
             box-shadow: unset;
             border: unset;
             color: $color-button;
 
             i {
-                margin-left: -10px;
+                margin-left: -1rem;
+                font-size: 1.2rem;
             }
         }
     }

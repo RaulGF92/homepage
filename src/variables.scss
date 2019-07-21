@@ -6,7 +6,7 @@ For prod
 $base-path: '/homepage/';
 */
 //Change this variable for look your files
-$base-path: '/homepage/';
+$base-path: '';
 
 
 $global-height: 100vh;
@@ -15,7 +15,6 @@ $global-width: 100vw;
 
 
 $background-window-primary: #CD6155;
-
 
 /* Inheritance classes*/
 %window {

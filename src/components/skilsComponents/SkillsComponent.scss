@@ -7,7 +7,6 @@
     .skill-main {
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
         align-items: center;
         justify-items: center;
 
@@ -18,8 +17,12 @@
             justify-items: center;
 
             .charts-container {
-                width: 60%;
+                width: 100%;
                 margin: auto;
+            }
+
+            .set-size {
+                font-size: 6em;
             }
 
             * {
@@ -44,7 +47,7 @@
         }
 
         .css3 {
-            @include pie-color(#e01563);
+            @include pie-color(#F39C12);
         }
 
         .angular {
@@ -65,6 +68,19 @@
 
         .ts {
             @include pie-color(#007acc);
+
+            img {
+                height: 32px !important;
+                width: 32px !important;
+            }
+        }
+
+        .npm {
+            @include pie-color(#CC3534);
+        }
+
+        .spring {
+            @include pie-color(#599537);
         }
     }
 
