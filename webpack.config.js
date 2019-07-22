@@ -1,4 +1,7 @@
 let path = require("path");
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+const MinifyPlugin = require("babel-minify-webpack-plugin");
+
 /**
  * Configuración webpack
  */
@@ -20,7 +23,7 @@ module.exports = {
                 use: {
                     loader: 'babel-loader',
                     options: {
-                        presets: ['@babel/preset-env']
+                        presets: ['@babel/preset-env','minify']
                     }
                 }
             },
@@ -46,6 +49,13 @@ module.exports = {
             }
         ]
     },
+    plugins: [
+        new CopyWebpackPlugin([{
+            from: 'assets/**/**',
+            to: path.resolve(__dirname, 'dist/')
+        }]),
+        new MinifyPlugin()
+    ],
     devServer: {
         // Escribe automaticamente todos los datos compilados
         writeToDisk: true
