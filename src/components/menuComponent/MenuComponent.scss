@@ -49,8 +49,16 @@
         margin: auto;
         display: flex;
         flex-direction: column;
-        justify-items: center;
+        justify-items: stretch;
+        
+        .main {
+            flex: 0.6
+        }
 
+        .separator {
+            flex: 0.2
+        }
+        
         a {
             color: white;
             text-underline-position: under;
