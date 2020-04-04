@@ -38,6 +38,13 @@ $timeline-color-secondary : #E5E7E9;
         display: flex;
         flex-direction: row;
         align-items: stretch;
+        transition: max-height 1s;
+
+        &.active {
+            .sumary-place {
+                box-shadow: none !important;
+            }
+        }
 
         .timeline-interval {
             border-left: 2px solid white;
@@ -125,7 +132,9 @@ $timeline-color-secondary : #E5E7E9;
                 display: flex;
                 flex-direction: column;
                 flex: 0.85;
-
+                box-shadow: inset 
+                #566573 0px -20px 5px -20px;
+                
                 label {
                     text-transform: uppercase;
                     font-weight: bold;
@@ -138,12 +147,12 @@ $timeline-color-secondary : #E5E7E9;
 
                 p {
                     text-overflow: ellipsis;
-                    white-space: pre-line;
                     overflow: hidden;
                     text-align: justify;
                     text-justify: distribute;
                     text-align-last: left;
-                    word-break: break-all;
+                    word-break: break-word;
+                    transition: max-height 1s;
                 }
             }
         }
