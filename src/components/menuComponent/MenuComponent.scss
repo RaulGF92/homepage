@@ -10,11 +10,11 @@
     z-index: 1;
     overflow: hidden;
 
-    background: url($base-path + '/assets/tenor.gif') no-repeat;
+    background: url($base-path + '/assets/desktop.jpg') no-repeat;
     background-size: cover;
 
     @media (min-width: 768px) {
-        background: url($base-path + '/assets/tenor.gif') no-repeat bottom;
+        background: url($base-path + '/assets/mobile.jpg') no-repeat bottom;
         background-size: cover;
     }
 
