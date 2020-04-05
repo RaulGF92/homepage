@@ -16,6 +16,13 @@ export default class SkillsComponent extends Component {
         if(buttonClose) {
             buttonClose.onclick = closeViewEvent;
         }
+        
+        _this.elements[0].querySelectorAll(".project-card").forEach((element) => {
+            element.onclick = (e) => {
+                const url = element.attributes.href.value;
+                window.open(url, "_blank")
+            }
+        });
 
     }
 
