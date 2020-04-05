@@ -13,7 +13,7 @@
     background: url($base-path + '/assets/mobile.jpg') no-repeat;
     background-size: cover;
 
-    @media (min-width: 768px) {
+    @media (min-width: 800px) {
         background: url($base-path + '/assets/desktop.jpg') no-repeat bottom;
         background-size: cover;
     }
